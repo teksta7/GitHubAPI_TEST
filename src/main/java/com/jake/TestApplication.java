@@ -29,8 +29,8 @@ public class TestApplication
 	@Bean
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		return args -> {
-			CommitObject commit = restTemplate.getForObject(
-					"https://api.github.com/repos/teksta7/GitHubAPI_TEST/git/refs/heads/master", CommitObject.class);
+			Commit commit = restTemplate.getForObject(
+					"https://api.github.com/repos/teksta7/GitHubAPI_TEST/git/refs/heads/master", Commit.class);
 			log.info(commit.toString());
 		};
 	}
