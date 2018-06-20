@@ -38,7 +38,7 @@ public class CommitObject {
     @Override
     public String toString() {
         return "Commit{" +
-                "sha=" + sha +
+                "Last commit hash=" + sha +
                 ", type='" + type + '\'' +
                 ", url='" + url + '\'' +
                 '}';
